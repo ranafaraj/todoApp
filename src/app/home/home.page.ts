@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { CreateTaskComponent } from '../components/create-task/create-task.component';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private modalCtrl : ModalController) {}
+
+  async addTodo()
+  {
+    const modal = await this.modalCtrl.create({
+      component: CreateTaskComponent,
+      cssClass: 'addToDo',
+      showBackdrop: true,
+      backdropDismiss: true,
+      animated:true,
+    });
+    return await modal.present();
+  }
 
 }

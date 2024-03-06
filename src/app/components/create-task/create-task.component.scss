@@ -1,0 +1,23 @@
+.container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#label{
+  font-weight: 800;
+  text-align: center;
+
+}
+
+.margin-space{
+ margin :10px;
+}
+
+
+.button{
+  margin: 5px;
+  margin-top:10px;
+  
+}
