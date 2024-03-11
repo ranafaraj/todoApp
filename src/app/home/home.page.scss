@@ -1,27 +1,79 @@
-#container {
+
+
+
+ion-card{
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon-button  {
+    align-self: flex-start;
+
+
+   ion-icon{
+    margin: 5px !important;
+   }
+  }
+  .detail {
+    flex-grow: 1;
+    margin:  10px;
+  }
+  .detail h2,
+  .detail p {
+    margin: 0;
+  }
+  .close-icon {
+    cursor: pointer;
+  }
+  .close-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-box{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  ion-icon{
+    font-size:30px;
+  }
+  }
+  .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 9px;
+    border: 2px solid gray;
+
+  }
+  .center-div {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+  }
+}
+
+h2{
+  color: #000;
+
+}
+
+h1
+{
+  margin: 10 0;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #000;
+  font-weight: 60;
+  font-size: 2rem;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+#todayDate
+{
+  text-align: center;
 }

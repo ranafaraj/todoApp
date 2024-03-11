@@ -1,0 +1,52 @@
+.top-container
+{
+display:flex;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mb-5{
+  margin:10px;
+}
+.button-box  {
+
+
+  ion-button{
+  background-color: #fff !important;
+  }
+
+
+}
+
+.detail {
+  flex-grow: 1;
+  margin:  10px;
+}
+.detail h2,
+.detail p {
+  margin: 0;
+}
+.close-icon {
+  cursor: pointer;
+}
+.close-icon {
+  margin:5px;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle ion-icon {
+  font-size: 24px;
+}
+.horizontal-line {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc; 
+}

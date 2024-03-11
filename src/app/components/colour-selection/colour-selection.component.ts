@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class ColourSelectionComponent   {
   @Output() colourSelected: EventEmitter<string> = new EventEmitter<string>();
-  colours: string[] = ['#FFD480', '#D1FFBD', '#ADDFFF',' #FFD1DF',' #FFA500','#CCCCFF'];
+  colours: string[] = ['#C40234', '#ADFF2F', '#89CFF0',' #FFD1DF',' #FFEF00','#CCCCFF'];
   selectedColour: string = '';
   constructor() {}
 

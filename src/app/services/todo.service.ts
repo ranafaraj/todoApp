@@ -18,16 +18,16 @@ export class TodoService {
   }
 
   getAllTodo() {
-    let tasks: any[] = [];
-    return new Promise((resolve, reject) => {
-      this.storage.forEach((value, key, index) => {
-        tasks.push({ 'key': key, 'value': value });
-      }).then(() => {
+    let tasks: any =[];
+    var promise = new Promise((resolve, reject)=> {
+      this.storage.forEach((value, key,index) => {
+        tasks.push({'key':key,'value':value});
+      }).then((d) => {
         resolve(tasks);
-      }).catch((error) => {
-        reject(error);
       });
     });
+
+    return promise;
   }
 
   getTaskById(key: string) {
